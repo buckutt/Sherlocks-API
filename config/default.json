@@ -1,0 +1,22 @@
+{
+    "application": {
+        "port": 9000,
+        "prefix": "/sherlocks/"
+    },
+    "database": {
+        "override":  true,
+        "debug":     true,
+        "dialect":  "mariadb",
+        "host":     "localhost",
+        "database": "sherlocks",
+        "port":     "3306",
+        "username": "root",
+        "password": "root"
+    },
+    "sherlocks": {
+        "merchant_id": "044838667200019",
+        "response": "/opt/sherlocks/bin/response",
+        "request":  "/opt/sherlocks/bin/request",
+        "pathfile": "/opt/sherlocks/config/pathfile"
+    }
+}

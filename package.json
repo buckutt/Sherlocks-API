@@ -1,0 +1,39 @@
+{
+  "name": "sherlocks-api",
+  "version": "0.0.1",
+  "description": "API pour le service de paiement Sherlock's de la banque LCL",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^2.9.13",
+    "body-parser": "^1.12.2",
+    "config": "^1.12.0",
+    "ejs": "^2.3.1",
+    "express": "^4.12.0",
+    "jsonwebtoken": "^4.2.2",
+    "lodash": "^3.5.0",
+    "moment": "^2.9.0",
+    "morgan": "^1.5.1",
+    "mysql": "^2.5.5",
+    "range_check": "0.0.5",
+    "requestify": "^0.1.17",
+    "sequelize": "^2.0.4",
+    "winston": "^0.9.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "app.js"
+  },
+  "devDependencies": {
+    "type-of-is": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ungdev/sherlocks-api.git"
+  },
+  "author": "Thomas Chauchefoin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ungdev/sherlocks-api/issues"
+  },
+  "homepage": "https://github.com/ungdev/sherlocks-api"
+}

@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-family: 'Lato';
+}
+
+.receipt {
+    margin: 0 auto;
+    width: 500px;
+    background-color: #ECF0F1;
+    font-family: 'Inconsolata';
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Torn effect :-) */
+.receipt:after {
+    content:"";
+    display:block;
+    position:relative;
+    top:0;
+    left:0;
+    width:500px;
+    height:27px;
+    background: linear-gradient(#ECF0F1 0%, transparent 0%),
+                linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%,
+                #ffffff linear-gradient(45deg, #ffffff 33.33%, #ECF0F1 33.33%) 0 0%;
+    background: -webkit-linear-gradient(#ECF0F1 0%, transparent 0%),
+                -webkit-linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%,
+                #ffffff -webkit-linear-gradient(45deg, #ffffff 33.33%, #ECF0F1 33.33%) 0 0%;
+    background: -o-linear-gradient(#ECF0F1 0%, transparent 0%),
+                -o-linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%,
+                #ffffff -o-linear-gradient(45deg, #ffffff 33.33%, #ECF0F1 33.33%) 0 0%;
+    background: -moz-linear-gradient(#ECF0F1 0%, transparent 0%),
+                -moz-linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%,
+                #ffffff -moz-linear-gradient(45deg, #ffffff 33.33%, #ECF0F1 33.33%) 0 0%;
+    background-repeat: repeat-x;
+    background-size: 0px 100%, 9px 27px, 9px 27px;
+}

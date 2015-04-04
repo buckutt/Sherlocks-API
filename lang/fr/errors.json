@@ -1,0 +1,22 @@
+{
+    "404": {
+        "title": "Page introuvable !",
+        "subtitle": "La page demandée n'a pas pu être trouvée."
+    },
+    "403": {
+        "title": "Droits insuffisants !",
+        "subtitle": "Vous n'avez pas les droits pour effectuer cette action."
+    },
+    "500": {
+        "title": "Erreur inattendue.",
+        "subtitle": "Une erreur inattendue a eu lieu."
+    },
+    "400": {
+        "title": "Requête erronée.",
+        "subtitle": "La requête présente un format erroné."
+    },
+    "cancel": {
+        "title": "Transaction annulée.",
+        "subtitle": "Vous n'avez pas été débité !"
+    }
+}

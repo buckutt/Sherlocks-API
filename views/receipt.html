@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Reçu de carte bancaire</title>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/receipt.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reçu de transaction<h1/>
+        <div class="receipt">
+            <img src="/img/bde.png" width="200" alt="">
+            <p>BDE UTT<br>
+            12 rue marie curie<br>
+            10004 Troyes<br>
+            TEL 03 25 71 76 74</p>
+
+            <p><%= moment(transaction.updated_at).format('[LE] DD[/]MM[/]YYYY [A] h:mm:ss') %></p>
+
+            <p><b>MONTANT:</b><br>
+            <b><%= transaction.amount %> €<br>
+                (<%= transaction.amount * 6.57 %> FRF)</p>
+
+            <p>http://<%= transaction.Service.host %></p>
+        </div>
+
+    </div>
+</body>
+</html>

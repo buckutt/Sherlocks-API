@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>En attente de la validation</title>
+    <link rel="stylesheet" href="/css/loading.css">
+</head>
+<body>
+    <h1>En attente de la validation de votre paiement par la banque...</h1>
+    <h3><b>Ne quittez pas cette page</b>, vous serez automatiquement redirigé.</h3>
+    <input type="hidden" id="transaction-id"><%= transaction.token %></input>
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+    <script src="/js/qwest.min.js"></script>
+    <script src="/js/loading.js"></script>
+</body>
+</html>
